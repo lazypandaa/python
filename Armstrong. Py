@@ -1,11 +1,12 @@
-n=int(input("Enter Number: "))
+n=int(input("Enter the number: "))
 s=0
 a=n
 while(n>0):
     r=n%10
     s=s+(r*r*r)
-    n=n/10
-if(a==s):
-    print("Amstrong Number")
+    n=int(n/10)
+    print(f"{r}\t{s}\t{n}\n")#optional
+if a==s:
+    print(a,"is Amstrong Number")
 else:
-    print("Not Amstrong Number")
+    print(a,"is Not Amstrong Number")
