@@ -1,9 +1,10 @@
 n=int(input("Enter the number: "))
 s=0
 a=n
+digits = len(str(n))
 while(n>0):
     r=n%10
-    s=s+(r*r*r)
+    s=s+(r**digits)
     n=int(n/10)
     print(f"{r}\t{s}\t{n}\n")#optional
 if a==s:
